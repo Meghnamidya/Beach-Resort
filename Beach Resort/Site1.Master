@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Beach_Resort.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+	<title>Beach Resort</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+		<div id="background">
+			<div id="page">
+				<div id="header">
+					<div id="logo">
+						<a href="index.html"><img src="images/logo.png" alt="LOGO" width="875" height="160"></a>
+					</div>
+					<div id="navigation">
+						<ul>
+							<li>
+								<a href="index.aspx">Home</a>
+							</li>
+							<li>
+								<a href="about.aspx">About</a>
+							</li>
+							<li>
+								<a href="rooms.aspx">Rooms</a>
+							</li>
+							<li>
+								<a href="activities.aspx">Activities</a>
+								<ul>
+									<li><a href="scubadiving.aspx">Scuba Diving</a></li>
+									<li><a href="snorkeling.aspx">Snorkeling</a></li>
+									<li><a href="hotairballon.aspx">Hot Air Ballon</a></li>
+									<li><a href="parasailing.aspx">Parasailing</a></li>
+									<li><a href="flyboarding.aspx">Fly Boarding</a></li>
+									<li><a href="windsurfing.aspx">Wind Surfing</a></li>
+									<li><a href="combopack.aspx">Combo Pack</a></li>
+								</ul>
+							</li>
+							<li style="width:150px">
+								<a href="restaurants.aspx">Restaurants</a>
+							</li>
+							<li>
+								<a href="contact.aspx" >Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+				</asp:ContentPlaceHolder>
+			</div>
+			<div id="footer">
+				<div>
+					<ul class="navigation">
+						<li>
+							<a href="index.aspx">Home</a>
+						</li>
+						<li>
+							<a href="about.aspx">About</a>
+						</li>
+						<li>
+							<a href="rooms.aspx">Rooms</a>
+						</li>
+						<li>
+							<a href="activities.aspx">Activities</a>
+						</li>
+						<li>
+							<a href="restaurants.aspx">Restaurants</a>
+						</li>
+						<li>
+							<a href="contact.aspx">Contact</a>
+						</li>
+					</ul>
+					<div id="connect">
+						<a href="http://pinterest.com" target="_blank" class="pinterest"></a>
+						<a href="http://facebook.com" target="_blank" class="facebook"></a>
+						<a href="http://twitter.com" target="_blank" class="twitter"></a>
+						<a href="http://googleplus.com" target="_blank" class="googleplus"></a>
+					</div>
+				</div>
+			</div>
+			<p class ="para">
+				© 2021 by BEACH RESORT. All Rights Reserved
+			</p>
+		</div>
+    </form>
+</body>
+</html>
